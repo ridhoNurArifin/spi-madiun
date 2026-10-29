@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#c8102e">
 
-    <title>SPI Madiun | Stock Point Indogrosir Madiun</title>
-    <meta name="description" content="Kunjungi SPI Madiun untuk informasi promo, produk, event, WhatsApp Group, media sosial, lokasi, dan kontak MR/Sales Stock Point Indogrosir Madiun.">
-    <meta name="keywords" content="SPI Madiun, Stock Point Indogrosir Madiun, promo SPI Madiun, Indogrosir Madiun, MR Sales Madiun">
+    <!-- SEO -->
+    <title>Grosir Murah Madiun | SPI Madiun - Stock Point Indogrosir</title>
+    <meta name="description" content="Cari produk grosir di Madiun? Kunjungi SPI Madiun untuk informasi produk, promo, kebutuhan toko dan warung, belanja grosir, serta kontak MR/Sales.">
+    <meta name="keywords" content="grosir murah Madiun, grosir Madiun, grosir terpercaya Madiun, tempat kulakan Madiun, belanja grosir Madiun, supplier produk Madiun, toko grosir Madiun, harga grosir, grosir sembako Madiun, kebutuhan toko, kebutuhan warung, kulakan barang dagangan, belanja produk jumlah banyak, promo grosir Madiun, Stock Point Indogrosir Madiun, SPI Madiun">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Stock Point Indogrosir Madiun">
+    <meta name="language" content="Indonesian">
+    <meta name="geo.region" content="ID-JI">
+    <meta name="geo.placename" content="Madiun, Jawa Timur">
 
+    <!-- Social Media Preview -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="id_ID">
-    <meta property="og:title" content="SPI Madiun | Stock Point Indogrosir">
-    <meta property="og:description" content="Informasi promo, media sosial, lokasi, dan kontak MR/Sales SPI Madiun.">
+    <meta property="og:site_name" content="SPI Madiun">
+    <meta property="og:title" content="Grosir Murah Madiun | SPI Madiun">
+    <meta property="og:description" content="Informasi produk, promo grosir, kebutuhan toko dan warung, lokasi, serta kontak MR/Sales SPI Madiun.">
     <meta property="og:image" content="logo-spi-madiun.webp">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SPI Madiun | Stock Point Indogrosir">
+    <meta name="twitter:description" content="Informasi promo, produk, lokasi dan kontak MR/Sales SPI Madiun.">
+    <meta name="twitter:image" content="logo-spi-madiun.webp">
 
     <link rel="icon" href="logo-spi-madiun.webp" type="image/webp">
 
@@ -95,6 +106,14 @@
             font-weight: bold;
         }
 
+        .seo-description {
+            margin: 16px 4px 8px;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
         .section-title {
             display: flex;
             align-items: center;
@@ -128,11 +147,13 @@
             background: #fff;
             border: 1px solid #ececf1;
             border-radius: 14px;
-            transition: border-color .15s ease;
+            transition: border-color .15s ease,
+                        transform .15s ease;
         }
 
         .link-card:hover {
             border-color: #edb0bb;
+            transform: translateY(-1px);
         }
 
         .icon {
@@ -147,12 +168,25 @@
             font-weight: bold;
         }
 
-        .group { background: #168b55; }
-        .maps { background: #4285f4; }
-        .tiktok { background: #17191e; }
+        .group {
+            background: #168b55;
+        }
+
+        .maps {
+            background: #4285f4;
+        }
+
+        .tiktok {
+            background: #17191e;
+        }
 
         .instagram {
-            background: linear-gradient(135deg, #7955d9, #e1306c, #ff9b42);
+            background: linear-gradient(
+                135deg,
+                #7955d9,
+                #e1306c,
+                #ff9b42
+            );
         }
 
         .link-info {
@@ -235,6 +269,10 @@
             font-weight: 800;
         }
 
+        .wa-btn:hover {
+            background: #d4f2df;
+        }
+
         footer {
             padding: 28px 10px 5px;
             color: #9297a2;
@@ -246,6 +284,14 @@
             display: block;
             color: #464b56;
             font-size: 13px;
+        }
+
+        .created-by {
+            display: block;
+            margin-top: 6px;
+            font-size: 10px;
+            color: #737987;
+            letter-spacing: .5px;
         }
 
         @media (max-width: 450px) {
@@ -268,7 +314,9 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
+            *,
+            *::before,
+            *::after {
                 transition: none !important;
             }
         }
@@ -282,7 +330,7 @@
         <img
             class="logo"
             src="logo-spi-madiun.webp"
-            alt="Logo resmi Stock Point Indogrosir Madiun"
+            alt="Logo Stock Point Indogrosir Madiun"
             width="640"
             height="640"
             fetchpriority="high"
@@ -292,11 +340,21 @@
         <h1>Stock Point Indogrosir Madiun</h1>
 
         <p>
-            Temukan promo, produk terbaru, informasi event,
-            dan berbagai keuntungan member SPI Madiun.
+            Temukan informasi promo, produk, event, dan berbagai
+            keuntungan member SPI Madiun.
         </p>
 
         <span class="badge">● Official Links · Madiun</span>
+
+        <p class="seo-description">
+            SPI Madiun hadir untuk membantu kebutuhan belanja grosir
+            toko, warung, dan berbagai jenis usaha. Temukan informasi
+            produk, promo, serta kontak tim MR/Sales untuk menanyakan
+            ketersediaan barang dan ketentuan pembelian. Kunjungi
+            lokasi Stock Point Indogrosir Madiun melalui Google Maps
+            dan ikuti media sosial kami untuk mendapatkan informasi
+            terbaru.
+        </p>
     </header>
 
     <h2 class="section-title">Layanan & Informasi</h2>
@@ -305,7 +363,8 @@
 
         <a class="link-card"
            href="https://chat.whatsapp.com/JQ0jLUESBrwGZQKaEo12Ep"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
             <div class="icon group" aria-hidden="true">WA</div>
             <div class="link-info">
                 <strong>WhatsApp Group SPI Madiun</strong>
@@ -316,7 +375,8 @@
 
         <a class="link-card"
            href="https://maps.app.goo.gl/ba4izDnY4u3ecRHh9"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
             <div class="icon maps" aria-hidden="true">⌖</div>
             <div class="link-info">
                 <strong>Lokasi SPI Madiun</strong>
@@ -327,7 +387,8 @@
 
         <a class="link-card"
            href="https://www.tiktok.com/@spimadiun"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
             <div class="icon tiktok" aria-hidden="true">♪</div>
             <div class="link-info">
                 <strong>TikTok SPI Madiun</strong>
@@ -338,7 +399,8 @@
 
         <a class="link-card"
            href="https://www.instagram.com/spimadiun"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
             <div class="icon instagram" aria-hidden="true">◎</div>
             <div class="link-info">
                 <strong>Instagram SPI Madiun</strong>
@@ -351,15 +413,18 @@
 
     <h2 class="section-title">Kontak Tim MR / Sales</h2>
 
-    <section class="mr-grid" aria-label="Kontak MR dan Sales SPI Madiun">
+    <section class="mr-grid"
+             aria-label="Kontak MR dan Sales SPI Madiun">
 
         <article class="mr-card">
             <div class="avatar">RI</div>
             <div class="mr-info">
                 <strong>Ridho SPI Madiun</strong>
                 <small>0813-2985-713</small>
-                <a class="wa-btn" href="https://wa.me/628132985713"
-                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+                <a class="wa-btn"
+                   href="https://wa.me/628132985713"
+                   target="_blank"
+                   rel="noopener noreferrer">Chat WA ↗</a>
             </div>
         </article>
 
@@ -368,8 +433,10 @@
             <div class="mr-info">
                 <strong>Cendy SPI Madiun</strong>
                 <small>0858-5999-3550</small>
-                <a class="wa-btn" href="https://wa.me/6285859993550"
-                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+                <a class="wa-btn"
+                   href="https://wa.me/6285859993550"
+                   target="_blank"
+                   rel="noopener noreferrer">Chat WA ↗</a>
             </div>
         </article>
 
@@ -378,8 +445,10 @@
             <div class="mr-info">
                 <strong>Adi SPI Madiun</strong>
                 <small>0813-3704-875</small>
-                <a class="wa-btn" href="https://wa.me/628133704875"
-                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+                <a class="wa-btn"
+                   href="https://wa.me/628133704875"
+                   target="_blank"
+                   rel="noopener noreferrer">Chat WA ↗</a>
             </div>
         </article>
 
@@ -388,8 +457,10 @@
             <div class="mr-info">
                 <strong>AHI SPI Madiun</strong>
                 <small>0858-6926-9232</small>
-                <a class="wa-btn" href="https://wa.me/6285869269232"
-                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+                <a class="wa-btn"
+                   href="https://wa.me/6285869269232"
+                   target="_blank"
+                   rel="noopener noreferrer">Chat WA ↗</a>
             </div>
         </article>
 
@@ -398,8 +469,10 @@
             <div class="mr-info">
                 <strong>Ari SPI Madiun</strong>
                 <small>0819-1256-5176</small>
-                <a class="wa-btn" href="https://wa.me/6281912565176"
-                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+                <a class="wa-btn"
+                   href="https://wa.me/6281912565176"
+                   target="_blank"
+                   rel="noopener noreferrer">Chat WA ↗</a>
             </div>
         </article>
 
@@ -408,8 +481,10 @@
             <div class="mr-info">
                 <strong>Izal SPI Madiun</strong>
                 <small>0857-4001-9985</small>
-                <a class="wa-btn" href="https://wa.me/6285740019985"
-                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+                <a class="wa-btn"
+                   href="https://wa.me/6285740019985"
+                   target="_blank"
+                   rel="noopener noreferrer">Chat WA ↗</a>
             </div>
         </article>
 
@@ -418,8 +493,10 @@
             <div class="mr-info">
                 <strong>Ryan SPI Madiun</strong>
                 <small>0813-9390-984</small>
-                <a class="wa-btn" href="https://wa.me/628139390984"
-                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+                <a class="wa-btn"
+                   href="https://wa.me/628139390984"
+                   target="_blank"
+                   rel="noopener noreferrer">Chat WA ↗</a>
             </div>
         </article>
 
@@ -428,8 +505,10 @@
             <div class="mr-info">
                 <strong>Vacel SPI Madiun</strong>
                 <small>0858-7802-6815</small>
-                <a class="wa-btn" href="https://wa.me/6285878026815"
-                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+                <a class="wa-btn"
+                   href="https://wa.me/6285878026815"
+                   target="_blank"
+                   rel="noopener noreferrer">Chat WA ↗</a>
             </div>
         </article>
 
@@ -438,7 +517,7 @@
     <footer>
         <strong>Stock Point Indogrosir Madiun</strong>
         © <span id="year"></span> SPI Madiun · All rights reserved
-         <small class="created-by">Created by ridho_n_a</small>
+        <small class="created-by">Created by ridho_n_a</small>
     </footer>
 
 </main>
