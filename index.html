@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#c8102e">
+
+    <title>SPI Madiun | Stock Point Indogrosir Madiun</title>
+    <meta name="description" content="Kunjungi SPI Madiun untuk informasi promo, produk, event, WhatsApp Group, media sosial, lokasi, dan kontak MR/Sales Stock Point Indogrosir Madiun.">
+    <meta name="keywords" content="SPI Madiun, Stock Point Indogrosir Madiun, promo SPI Madiun, Indogrosir Madiun, MR Sales Madiun">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Stock Point Indogrosir Madiun">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="SPI Madiun | Stock Point Indogrosir">
+    <meta property="og:description" content="Informasi promo, media sosial, lokasi, dan kontak MR/Sales SPI Madiun.">
+    <meta property="og:image" content="logo-spi-madiun.webp">
+
+    <link rel="icon" href="logo-spi-madiun.webp" type="image/webp">
+
+    <style>
+        :root {
+            --red: #c8102e;
+            --dark: #990b23;
+            --bg: #f4f5f8;
+            --text: #20232b;
+            --muted: #737987;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                radial-gradient(ellipse at top, #ffe5e9, transparent 45%),
+                var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: min(100% - 28px, 620px);
+            margin: auto;
+            padding: 24px 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px 8px 24px;
+        }
+
+        .logo {
+            display: block;
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: contain;
+            margin: 0 auto 12px;
+        }
+
+        h1 {
+            font-size: clamp(23px, 5vw, 30px);
+            line-height: 1.25;
+            letter-spacing: -.5px;
+        }
+
+        .header p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 13px;
+            padding: 6px 12px;
+            border: 1px solid #f0d7dc;
+            border-radius: 30px;
+            background: white;
+            color: var(--red);
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 22px 2px 12px;
+            color: #858a97;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+        }
+
+        .section-title::after {
+            content: "";
+            height: 1px;
+            background: #e1e3e9;
+            flex: 1;
+        }
+
+        .links {
+            display: grid;
+            gap: 10px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            min-height: 72px;
+            padding: 12px 15px;
+            background: #fff;
+            border: 1px solid #ececf1;
+            border-radius: 14px;
+            transition: border-color .15s ease;
+        }
+
+        .link-card:hover {
+            border-color: #edb0bb;
+        }
+
+        .icon {
+            width: 43px;
+            height: 43px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .group { background: #168b55; }
+        .maps { background: #4285f4; }
+        .tiktok { background: #17191e; }
+
+        .instagram {
+            background: linear-gradient(135deg, #7955d9, #e1306c, #ff9b42);
+        }
+
+        .link-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .link-info strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .link-info small {
+            display: block;
+            margin-top: 3px;
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .arrow {
+            color: #a0a4ae;
+            font-size: 23px;
+        }
+
+        .mr-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .mr-card {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            min-width: 0;
+            padding: 12px;
+            background: white;
+            border: 1px solid #e9eaf0;
+            border-radius: 12px;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            background: #fff0f2;
+            color: var(--red);
+            font-size: 11px;
+            font-weight: 900;
+        }
+
+        .mr-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .mr-info strong {
+            display: block;
+            font-size: 12px;
+            overflow-wrap: anywhere;
+        }
+
+        .mr-info small {
+            display: block;
+            margin: 3px 0 7px;
+            color: var(--muted);
+            font-size: 10px;
+        }
+
+        .wa-btn {
+            display: inline-block;
+            padding: 6px 9px;
+            border-radius: 7px;
+            background: #e8f8ee;
+            color: #14783f;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        footer {
+            padding: 28px 10px 5px;
+            color: #9297a2;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        footer strong {
+            display: block;
+            color: #464b56;
+            font-size: 13px;
+        }
+
+        @media (max-width: 450px) {
+            .container {
+                width: calc(100% - 24px);
+                padding-top: 16px;
+            }
+
+            .logo {
+                max-width: 230px;
+            }
+
+            .mr-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .link-card {
+                padding: 11px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<main class="container">
+
+    <header class="header">
+        <img
+            class="logo"
+            src="logo-spi-madiun.webp"
+            alt="Logo resmi Stock Point Indogrosir Madiun"
+            width="640"
+            height="640"
+            fetchpriority="high"
+            decoding="async"
+        >
+
+        <h1>Stock Point Indogrosir Madiun</h1>
+
+        <p>
+            Temukan promo, produk terbaru, informasi event,
+            dan berbagai keuntungan member SPI Madiun.
+        </p>
+
+        <span class="badge">● Official Links · Madiun</span>
+    </header>
+
+    <h2 class="section-title">Layanan & Informasi</h2>
+
+    <section class="links" aria-label="Layanan dan informasi SPI Madiun">
+
+        <a class="link-card"
+           href="https://chat.whatsapp.com/JQ0jLUESBrwGZQKaEo12Ep"
+           target="_blank" rel="noopener noreferrer">
+            <div class="icon group" aria-hidden="true">WA</div>
+            <div class="link-info">
+                <strong>WhatsApp Group SPI Madiun</strong>
+                <small>Gabung grup SPI Madiun</small>
+            </div>
+            <span class="arrow" aria-hidden="true">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://maps.app.goo.gl/ba4izDnY4u3ecRHh9"
+           target="_blank" rel="noopener noreferrer">
+            <div class="icon maps" aria-hidden="true">⌖</div>
+            <div class="link-info">
+                <strong>Lokasi SPI Madiun</strong>
+                <small>Petunjuk lokasi melalui Google Maps</small>
+            </div>
+            <span class="arrow" aria-hidden="true">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://www.tiktok.com/@spimadiun"
+           target="_blank" rel="noopener noreferrer">
+            <div class="icon tiktok" aria-hidden="true">♪</div>
+            <div class="link-info">
+                <strong>TikTok SPI Madiun</strong>
+                <small>@spimadiun · Video dan promo</small>
+            </div>
+            <span class="arrow" aria-hidden="true">›</span>
+        </a>
+
+        <a class="link-card"
+           href="https://www.instagram.com/spimadiun"
+           target="_blank" rel="noopener noreferrer">
+            <div class="icon instagram" aria-hidden="true">◎</div>
+            <div class="link-info">
+                <strong>Instagram SPI Madiun</strong>
+                <small>@spimadiun · Promo, produk dan event</small>
+            </div>
+            <span class="arrow" aria-hidden="true">›</span>
+        </a>
+
+    </section>
+
+    <h2 class="section-title">Kontak Tim MR / Sales</h2>
+
+    <section class="mr-grid" aria-label="Kontak MR dan Sales SPI Madiun">
+
+        <article class="mr-card">
+            <div class="avatar">RI</div>
+            <div class="mr-info">
+                <strong>Ridho SPI Madiun</strong>
+                <small>0813-2985-713</small>
+                <a class="wa-btn" href="https://wa.me/628132985713"
+                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+            </div>
+        </article>
+
+        <article class="mr-card">
+            <div class="avatar">CR</div>
+            <div class="mr-info">
+                <strong>Cendy SPI Madiun</strong>
+                <small>0858-5999-3550</small>
+                <a class="wa-btn" href="https://wa.me/6285859993550"
+                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+            </div>
+        </article>
+
+        <article class="mr-card">
+            <div class="avatar">AD</div>
+            <div class="mr-info">
+                <strong>Adi SPI Madiun</strong>
+                <small>0819-1256-5176</small>
+                <a class="wa-btn" href="https://wa.me/6281912565176"
+                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+            </div>
+        </article>
+
+        <article class="mr-card">
+            <div class="avatar">AH</div>
+            <div class="mr-info">
+                <strong>AHI SPI Madiun</strong>
+                <small>0858-6926-9232</small>
+                <a class="wa-btn" href="https://wa.me/6285869269232"
+                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+            </div>
+        </article>
+
+        <article class="mr-card">
+            <div class="avatar">AR</div>
+            <div class="mr-info">
+                <strong>Ari SPI Madiun</strong>
+                <small>0819-1256-5176</small>
+                <a class="wa-btn" href="https://wa.me/6281912565176"
+                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+            </div>
+        </article>
+
+        <article class="mr-card">
+            <div class="avatar">IZ</div>
+            <div class="mr-info">
+                <strong>Izal SPI Madiun</strong>
+                <small>0857-4001-9985</small>
+                <a class="wa-btn" href="https://wa.me/6285740019985"
+                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+            </div>
+        </article>
+
+        <article class="mr-card">
+            <div class="avatar">RY</div>
+            <div class="mr-info">
+                <strong>Ryan SPI Madiun</strong>
+                <small>0813-9390-984</small>
+                <a class="wa-btn" href="https://wa.me/628139390984"
+                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+            </div>
+        </article>
+
+        <article class="mr-card">
+            <div class="avatar">VA</div>
+            <div class="mr-info">
+                <strong>Vacel SPI Madiun</strong>
+                <small>0858-7802-6815</small>
+                <a class="wa-btn" href="https://wa.me/6285878026815"
+                   target="_blank" rel="noopener noreferrer">Chat WA ↗</a>
+            </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <strong>Stock Point Indogrosir Madiun</strong>
+        © <span id="year"></span> SPI Madiun · All rights reserved
+    </footer>
+
+</main>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
+</html>
