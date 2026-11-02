@@ -324,21 +324,22 @@
         .modal-body p {
             font-size: 13px;
             color: var(--text);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .modal-body ul {
-            margin: 10px 0 16px 20px;
+            margin: 8px 0 12px 20px;
             font-size: 13px;
             color: var(--text);
         }
 
         .modal-body li {
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .modal-footer {
             text-align: right;
+            margin-top: 14px;
         }
 
         .modal-btn {
@@ -376,7 +377,7 @@
             margin-top: 6px;
             font-size: 10px;
             color: #737987;
-            letter-spacing: .5px;
+            letter-spacing: .5k;
         }
 
         @media (max-width: 450px) {
@@ -410,20 +411,24 @@
 
 <body>
 
-<!-- Pop-up / Modal Peringatan Item Larangan -->
+<!-- Pop-up / Modal Ketentuan Item Larangan & Poin -->
 <div class="modal-overlay" id="alertModal" aria-hidden="true">
     <div class="modal-box">
         <div class="modal-header">
-            ⚠️ Perhatian / Item Larangan
+            ⚠️ Informasi Item Larangan & Poin
         </div>
         <div class="modal-body">
-            <p>Mohon diperhatikan, berikut adalah ketentuan dan daftar <strong>item larangan</strong> di luar item umum (gula, tepung sak, rokok):</p>
+            <p>Mohon diperhatikan, item tertentu seperti <strong>gula, tepung ukuran sak, dan rokok</strong> masuk dalam kategori <strong>item larangan</strong> yang <u>tidak dihitung</u> dalam perolehan poin/gratis ongkir.</p>
+            
+            <p><strong>Contoh Simulasi:</strong></p>
             <ul>
-                <li>Dilarang membawa/memasukkan barang-barang berbahaya atau mudah terbakar.</li>
-                <li>Pembatasan khusus untuk produk tertentu sesuai dengan ketentuan manajemen SPI Madiun.</li>
-                <li>Pastikan untuk selalu berkoordinasi dengan Tim MR/Sales kami jika ada keraguan terkait produk pesanan Anda.</li>
+                <li>Belanja total: <strong>Rp 500.000</strong></li>
+                <li>Terdiri dari item biasa (Rp 300.000) dan item larangan/gula/rokok (Rp 200.000).</li>
+                <li>Poin / Gratis Ongkir hanya dihitung dari item biasa: <strong>Rp 300.000</strong> saja (dapat 3.000 poin).</li>
+                <li>Belanjaan item larangan (Rp 200.000) <em>tidak dihitung</em> untuk poin.</li>
             </ul>
-            <p style="font-size: 11px; color: var(--muted);">*Silakan hubungi Sales/MR kami via WhatsApp untuk informasi lebih lanjut mengenai ketentuan produk.</p>
+
+            <p style="font-size: 11px; color: var(--muted);">*Silakan hubungi Tim MR/Sales kami via WhatsApp untuk info lebih lanjut.</p>
         </div>
         <div class="modal-footer">
             <button class="modal-btn" id="closeModalBtn">Saya Mengerti</button>
